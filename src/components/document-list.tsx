@@ -30,7 +30,7 @@ export function DocumentList({ documents }: DocumentListProps) {
         <div key={index} className="flex gap-3 items-center mt-3 w-full">
           <Image
             loading="lazy"
-            src={doc.icon}
+            src={`/square-arrow-up-right.svg`}
             alt=""
             className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
             width={16}

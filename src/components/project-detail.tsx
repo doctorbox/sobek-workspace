@@ -10,7 +10,7 @@ export function ProjectDetails({
   documents
 }: ProjectDetailsProps) {
   return (
-    <div className="overflow-hidden pb-4 pl-12 bg-white rounded-lg border border-solid border-zinc-200 shadow-[0px_1px_2px_rgba(0,0,0,0.06)] max-md:pl-5">
+    <div className="overflow-hidden pb-4 pl-12 bg-white rounded-lg border border-solid border-zinc-200 shadow-[0px_1px_2px_rgba(0,0,0,0.06)] max-md:pl-5 mb-5">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[76%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col self-stretch pr-12 my-auto w-full text-sm max-md:mt-10 max-md:max-w-full">
@@ -44,10 +44,10 @@ export function ProjectDetails({
             </button>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-[24%] max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col ml-5 w-[24%] max-md:ml-0 max-md:w-full bg-[linear-gradient(180deg,_#EEF2FF_0%,_#FFF_100%)]">
           <div className="flex flex-col grow pt-12 pb-48 max-md:pb-24">
             <div className="flex flex-col pl-6 max-md:pl-5">
-              <h2 className="text-lg font-semibold tracking-tight leading-loose text-zinc-900">
+              <h2 className="text-lg font-semibold tracking-tight leading-loose text-zinc-900 pb-[24px] border-b">
                 Uploaded documents
               </h2>
 
