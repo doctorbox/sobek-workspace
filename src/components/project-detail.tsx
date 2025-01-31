@@ -1,3 +1,4 @@
+import router from "next/router";
 import { DocumentList } from "./document-list";
 import { ProjectDetailsProps } from "@/types";
 
@@ -36,11 +37,14 @@ export function ProjectDetails({
                 {description}
               </div>
             </div>
+
+
             <button 
-              className="gap-2 self-start px-8 py-2.5 mt-8 font-medium leading-none text-white bg-indigo-800 rounded-md min-h-[40px] shadow-[0px_1px_3px_rgba(0,0,0,0.1)] max-md:px-5"
-              tabIndex={0}
+                className="gap-2 self-start px-8 py-2.5 mt-8 font-medium leading-none text-white bg-indigo-800 rounded-md min-h-[40px] shadow-[0px_1px_3px_rgba(0,0,0,0.1)] max-md:px-5"
+                tabIndex={0}
+                onClick={() => router.push('/project-details')}
             >
-              Open Session
+                Open Session
             </button>
           </div>
         </div>
