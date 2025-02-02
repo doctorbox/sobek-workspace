@@ -1,5 +1,5 @@
-import { Avatar } from "../avatar"
-import Image from "next/image"
+import { Avatar } from "../avatar";
+import Image from "next/image";
 import { BreadcrumbItem } from "./breadcrumb-item";
 
 export const NavigationBar = () => {
@@ -7,7 +7,7 @@ export const NavigationBar = () => {
     <>
       <nav className="flex justify-between items-center px-6 py-3 w-full bg-white  max-md:px-4 max-md:py-3 max-sm:px-4 max-sm:py-2">
         <Image
-          src='logo-dark.svg'
+          src="logo-dark.svg"
           alt="Company Logo"
           width={40}
           height={40}

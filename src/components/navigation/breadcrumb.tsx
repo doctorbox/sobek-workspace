@@ -1,16 +1,15 @@
 import { BreadcrumbItem } from "./breadcrumb-item";
-import Image from "next/image"
-
+import Image from "next/image";
 
 type BreadcrumbData = {
   text: string;
   isActive?: boolean;
-}
+};
 
 export const Breadcrumb: React.FC = () => {
   const items: BreadcrumbData[] = [
     { text: "Stages", isActive: true },
-    { text: "Tasks" }
+    { text: "Tasks" },
   ];
 
   return (

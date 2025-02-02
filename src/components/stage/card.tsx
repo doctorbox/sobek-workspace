@@ -1,11 +1,11 @@
-import { StageProps } from '@/types';
-import { useState } from 'react';
+import { StageProps } from "@/types";
+import { useState } from "react";
 
 export const StageCard: React.FC<StageProps> = ({
   stageNumber,
   title,
   objectives,
-  lastUpdated
+  lastUpdated,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -37,20 +37,23 @@ export const StageCard: React.FC<StageProps> = ({
           </ul>
           {isVisible && (
             <>
-                <div className="mb-2 text-base font-semibold text-zinc-900 mt-5">
-                    Major Milestones
-                </div>
-                <ul className="flex flex-col gap-1 list-disc">
-                    {objectives.map((objective, index) => (
-                    <li key={index} className="text-sm leading-none text-zinc-700">
-                        {objective}
-                    </li>
-                    ))}
-                </ul>
+              <div className="mb-2 text-base font-semibold text-zinc-900 mt-5">
+                Major Milestones
+              </div>
+              <ul className="flex flex-col gap-1 list-disc">
+                {objectives.map((objective, index) => (
+                  <li
+                    key={index}
+                    className="text-sm leading-none text-zinc-700"
+                  >
+                    {objective}
+                  </li>
+                ))}
+              </ul>
             </>
           )}
-          
-          <button 
+
+          <button
             className="mt-6 text-sm font-medium underline cursor-pointer text-zinc-950"
             tabIndex={0}
             onClick={toggleVisibility}

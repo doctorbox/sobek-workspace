@@ -3,20 +3,24 @@ import { FeatureCard } from "./feature-card";
 const features = [
   {
     title: "Analyzes Your Workflow",
-    description: "Upload your research documents and protocols, and our AI will map your current workflow, identifying opportunities for optimization across key development stages."
+    description:
+      "Upload your research documents and protocols, and our AI will map your current workflow, identifying opportunities for optimization across key development stages.",
   },
   {
     title: "Offers Intelligent Guidance",
-    description: "Access curated insights drawn from scientific literature, case studies, and expert annotations relevant to your specific tasks."
+    description:
+      "Access curated insights drawn from scientific literature, case studies, and expert annotations relevant to your specific tasks.",
   },
   {
     title: "Enhances Your Process",
-    description: "Discover AI tools, methodologies, and best practices that can improve your workflow while managing risks."
+    description:
+      "Discover AI tools, methodologies, and best practices that can improve your workflow while managing risks.",
   },
   {
     title: "Adapts to Your Needs",
-    description: "Whether you're starting fresh or optimizing existing protocols, Sobek AI provides contextual Adapts to Your Needs without being prescriptive."
-  }
+    description:
+      "Whether you're starting fresh or optimizing existing protocols, Sobek AI provides contextual Adapts to Your Needs without being prescriptive.",
+  },
 ];
 
 export const HelpFeatures: React.FC = () => {

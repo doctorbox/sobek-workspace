@@ -3,7 +3,10 @@ interface ProjectMetricProps {
   value: string;
 }
 
-export const ProjectMetric: React.FC<ProjectMetricProps> = ({ label, value }) => {
+export const ProjectMetric: React.FC<ProjectMetricProps> = ({
+  label,
+  value,
+}) => {
   return (
     <div className="flex flex-col justify-between self-stretch my-auto min-h-[44px] w-[94px] max-sm:w-full">
       <div className="font-bold text-zinc-900">{label}</div>

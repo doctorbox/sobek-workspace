@@ -10,14 +10,13 @@
  *   { title: 'Document 1' },
  *   { title: 'Document 2' }
  * ];
- * 
+ *
  * <DocumentList documents={documents} />
  *
  * @returns {JSX.Element} A JSX element representing the list of documents.
  */
 import { DocumentItem } from "@/types";
-import Image from "next/image"
-
+import Image from "next/image";
 
 interface DocumentListProps {
   documents: DocumentItem[];
