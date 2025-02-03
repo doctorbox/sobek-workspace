@@ -13,11 +13,13 @@ export const Breadcrumb: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-2 items-center text-xs leading-none whitespace-nowrap text-zinc-500">
+    <div className="flex flex-grow flex-wrap gap-2 mx-auto my-0 max-w-[920px] max-md:p-5 text-xs leading-none whitespace-nowrap text-zinc-500">
       <Image
         loading="lazy"
-        src=""
+        src="/chevron-left.svg"
         className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
+        width={16}
+        height={16}
         alt=""
       />
       {items.map((item, index) => (

@@ -47,8 +47,8 @@ const stagesData: StageProps[] = [
 
 export const StagesView: React.FC = () => {
   return (
-    <div>
-      <div className="flex flex-col px-64 pt-16 pb-32 mx-auto my-0 bg-white max-w-[1440px] max-md:px-10 max-md:pt-10 max-md:pb-20 max-sm:px-5 max-sm:pt-5 max-sm:pb-16">
+    <div className="bg-[linear-gradient(180deg,_#EFF6FF_36.26%,_#FFF_100%)]">
+      <div className="flex flex-col px-64 pt-16 pb-32 mx-auto my-0 max-w-[1440px] max-md:px-10 max-md:pt-10 max-md:pb-20 max-sm:px-5 max-sm:pt-5 max-sm:pb-16">
         <div className="flex justify-between items-start mb-8 w-full">
           <div className="flex-1">
             <h1 className="mb-4 text-3xl font-semibold tracking-tight leading-none text-zinc-950 max-sm:text-2xl">

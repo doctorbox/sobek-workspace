@@ -41,7 +41,7 @@ export function ProjectDetails({
             <button
               className="gap-2 self-start px-8 py-2.5 mt-8 font-medium leading-none text-white bg-indigo-800 rounded-md min-h-[40px] shadow-[0px_1px_3px_rgba(0,0,0,0.1)] max-md:px-5"
               tabIndex={0}
-              onClick={() => router.push("/project-details")}
+              onClick={() => router.push("/session")}
             >
               Open Session
             </button>
