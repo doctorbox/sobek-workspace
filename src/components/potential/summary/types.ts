@@ -1,6 +1,7 @@
 export interface KeyOpportunityItem {
   title: string;
   description: string;
+  id: string;
 }
 
 export interface SummaryProps {

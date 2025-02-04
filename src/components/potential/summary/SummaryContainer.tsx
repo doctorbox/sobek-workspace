@@ -11,12 +11,14 @@ export function SummaryContainer() {
           "Potential immune epitope map for structural proteins of SARS-CoV-2",
         description:
           "The team could enhance their Epitope Mapping and Selection process by integrating several predictive tools from this study.",
+        id: 1,
       },
       {
         title:
           "A novel approach to designing viral precision vaccines applied to SARS-CoV-2",
         description:
           "The team might consider integrating BepiPred-2.0 into their Epitope Mapping and Selection process to enhance the predictive accuracy.",
+        id: 2,
       },
     ],
   };
