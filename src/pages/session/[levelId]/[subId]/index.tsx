@@ -7,7 +7,7 @@ const SessionPage: React.FC = () => {
   const { id } = router.query;
 
   return (
-    <div>
+    <div className="">
       <OverviewSection />
     </div>
   );
