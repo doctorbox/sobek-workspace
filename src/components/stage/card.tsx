@@ -72,7 +72,10 @@ export const StageCard: React.FC<StageProps> = ({
             >
               Evaluate my tasks
             </button>
-            <button className="px-8 py-2 text-sm font-medium leading-none text-indigo-800 bg-white rounded-md border border-current border-solid transition-all cursor-pointer duration-[0.2s] shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-md:flex-1 max-sm:px-5 max-sm:py-2">
+            <button
+              className="px-8 py-2 text-sm font-medium leading-none text-indigo-800 bg-white rounded-md border border-current border-solid transition-all cursor-pointer duration-[0.2s] shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-md:flex-1 max-sm:px-5 max-sm:py-2"
+              onClick={() => router.push(`/session/${stageNumber}/methodology`)}
+            >
               Evaluate my methodology
             </button>
           </div>
