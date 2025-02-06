@@ -1,6 +1,7 @@
 import { StageProps } from "@/types";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import PmButton from "../common/pm-button";
 
 export const StageCard: React.FC<StageProps> = ({
   stageNumber,
@@ -66,18 +67,14 @@ export const StageCard: React.FC<StageProps> = ({
         </div>
         <div className="flex justify-between items-center px-10 py-8 max-md:flex-col max-md:gap-5 max-md:items-start max-sm:p-5">
           <div className="flex gap-5 max-md:w-full">
-            <button
-              className="px-8 py-2 text-sm font-medium leading-none text-indigo-800 bg-white rounded-md border border-current border-solid transition-all cursor-pointer duration-[0.2s] shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-md:flex-1 max-sm:px-5 max-sm:py-2"
-              onClick={() => router.push(`/session/${stageNumber}`)}
-            >
+            <PmButton onClick={() => router.push(`/session/${stageNumber}`)}>
               Evaluate my tasks
-            </button>
-            <button
-              className="px-8 py-2 text-sm font-medium leading-none text-indigo-800 bg-white rounded-md border border-current border-solid transition-all cursor-pointer duration-[0.2s] shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-md:flex-1 max-sm:px-5 max-sm:py-2"
+            </PmButton>
+            <PmButton
               onClick={() => router.push(`/session/${stageNumber}/methodology`)}
             >
               Evaluate my methodology
-            </button>
+            </PmButton>
           </div>
           <div className="text-xs leading-none text-zinc-500">
             Last Updated: {lastUpdated}

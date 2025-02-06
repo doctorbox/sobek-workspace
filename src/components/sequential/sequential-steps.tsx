@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Step } from "./step";
+import { Step } from "../common/step";
 import { ToggleButton } from "./toggle-button";
 
 const steps = [

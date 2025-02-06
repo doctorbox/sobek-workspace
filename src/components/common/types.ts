@@ -1,7 +1,8 @@
 export interface StepProps {
-  number: string;
+  number?: string;
   title: string;
   description: string;
+  source?: string;
 }
 
 export interface ToggleButtonProps {

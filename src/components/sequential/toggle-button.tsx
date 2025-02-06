@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ToggleButtonProps } from "./types";
+import { ToggleButtonProps } from "../common/types";
 
 export const ToggleButton: React.FC<ToggleButtonProps> = ({
   isActive,
