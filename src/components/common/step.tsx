@@ -9,7 +9,13 @@ export const Step: React.FC<StepProps> = ({
   source,
 }) => {
   return (
-    <div className="flex gap-6 items-start p-6 w-full bg-white rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-md:p-5 max-md:max-w-full">
+    <div
+      className="flex gap-6 items-start p-6 w-full bg-white rounded-lg max-md:p-5 max-md:max-w-full shadow-md"
+      style={{
+        boxShadow:
+          "0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);",
+      }}
+    >
       <div className="flex gap-6 items-start w-full max-md:flex-col max-md:max-w-full">
         {number && (
           <div className="self-stretch m-auto w-12 font-medium leading-5 text-center border-2 border-solid border-zinc-300 min-h-[48px] min-w-[48px] rounded-[300px] text-zinc-950 pt-[11px]">
