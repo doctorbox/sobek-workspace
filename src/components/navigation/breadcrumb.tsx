@@ -29,9 +29,20 @@ export const Breadcrumb: React.FC = () => {
       gotoRoute: `/session/${router.query.levelId}`,
     },
     {
+      routePath: "/session/[levelId]/proposed-workflow-[id]",
+      text: "Propesed Workflow",
+      gotoRoute: `/session/${router.query.levelId}/proposed-workflow-${router.query.subId}`,
+    },
+    {
       routePath: "/session/[levelId]/[subId]/score-source",
       text: "Score and Sources",
       gotoRoute: `/session/${router.query.levelId}/${router.query.subId}/score-source`,
+    },
+    {
+      routePath:
+        "/session/[levelId]/[subId]/score-source/learning-[learningId]",
+      text: "Learning",
+      gotoRoute: `/session/${router.query.levelId}/${router.query.subId}/score-source/learning-${router.query.learningId}`,
     },
   ];
 
